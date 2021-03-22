@@ -30,8 +30,11 @@ class bst:
     def find(self, key):
         return self.find_value(self.root, key)
     def find_value(self,currentNode, key):
-        if  currentNode==None or currentNode.data == key:
-            return currentNode is not None #currentNode가 있으면 True 이고 없으면 False이다. 
+        if currentNode == None or currentNode.data == key:
+            return currentNode is not None  #currentNode가 있으면 True 이고 없으면 False이다. 
+        elif currentNode.data == key:
+                print(currentNode.left.data)
+                return true
         else:
             if key<= currentNode.data:
                 return self.find_value(currentNode.left, key)
@@ -42,25 +45,27 @@ class bst:
     def delete_value(self, currentNode, key):
         if currentNode == None:
             print("there is not same key in tree")
-        elif currentNode.data == key:
+        elif currentNode.data == key:# 찾게된다면
             currentNode = self.delete_remake(currentNode)
             return currentNode  
         else:
             if key <= currentNode.data:#왼쪽 부분에서 재귀
-                self.delete_value(currentNode.left,key)
+                currentNode.left =self.delete_value(currentNode.left,key) #이진탐색트리의 모든 데이터는 루트부터 시작하기 때문에 바뀐 값이 저장된 루트를 저장해야한다. 
             else:  #오른쪽 부분에서 재귀 
-                self.delete_value(currentNode.right, key)
+                currentNode.right=self.delete_value(currentNode.right, key)
         return currentNode
-    def delete_remake(self,del_node):
-        if del_node.right:
+    def delete_remake(self,del_node):#둘다 존재할 때 하나만 존재할 때를 나눠서 써준다. 
+        if del_node.right and del_node.left:
             node = del_node.right
-            #삭제하는 노드의 모든 right부분은 항상 삭제하는 노드의 모든 left보다 크다  
-            #따라서 삭제하는 노드의 left를 right부분 중 가장 작은 곳에 붙인다. 
-            print(node.data)
+            #삭제하는 노드의 모든 right부분중에서 가장 작은 부분은 항상 삭제하는 노드보다 크다.  
+            #따라서 삭제하는 노드의 right부분중 가장 작은 부분을 삭제하는 노드 자리에 넣는 다면 모든 이진탐색트리의 조건이 맞는다. 
             if node !=None:    
                 while node.left != None:
                     node = node.left #끝까지 내려간다. 
-                node.left = del_node.left
+            node.left = del_node.left
+            node.right = del_node.right
+            del_node = node
+        elif del_node.right:
             del_node = del_node.right
         else:
             del_node = del_node.left
@@ -71,12 +76,13 @@ a = [13, 11, 14, 5, 12, 3, 7, 2, 4, 6, 8]
 for i in a:
     work.insert(i)
 print(work.root.left.data)
-print(work.find(10))
-work.delete(10)
+
+work.delete(11)
 currentNode=work.root
 while currentNode != None:
-    print(currentNode.data)
-    currentNode=currentNode.left
+   print(currentNode.data)
+   currentNode = currentNode.left
+print(work.find(6))
 #다음엔 순회하는 코드를 보자
         
 
