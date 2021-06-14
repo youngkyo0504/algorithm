@@ -34,9 +34,6 @@ class bst:
     def find_value(self,currentNode, key):
         if currentNode == None or currentNode.data == key:
             return currentNode is not None  #currentNode가 있으면 True 이고 없으면 False이다. 
-        elif currentNode.data == key:
-                print(currentNode.left.data)
-                return true
         else:
             if key<= currentNode.data:
                 return self.find_value(currentNode.left, key)
