@@ -1,0 +1,17 @@
+{
+    "difficulty": "medium",
+    "similarQuestions": [
+        {
+            "title": "Subarray Sum Equals K",
+            "titleSlug": "subarray-sum-equals-k",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        },
+        {
+            "title": "Make Sum Divisible by P",
+            "titleSlug": "make-sum-divisible-by-p",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "difficulty": "easy",
+    "similarQuestions": [
+        {
+            "title": "Isomorphic Strings",
+            "titleSlug": "isomorphic-strings",
+            "difficulty": "Easy",
+            "translatedTitle": null
+        },
+        {
+            "title": "Word Pattern II",
+            "titleSlug": "word-pattern-ii",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        }
+    ]
+}

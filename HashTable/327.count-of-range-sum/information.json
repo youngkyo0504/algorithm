@@ -1,0 +1,17 @@
+{
+    "difficulty": "hard",
+    "similarQuestions": [
+        {
+            "title": "Count of Smaller Numbers After Self",
+            "titleSlug": "count-of-smaller-numbers-after-self",
+            "difficulty": "Hard",
+            "translatedTitle": null
+        },
+        {
+            "title": "Reverse Pairs",
+            "titleSlug": "reverse-pairs",
+            "difficulty": "Hard",
+            "translatedTitle": null
+        }
+    ]
+}

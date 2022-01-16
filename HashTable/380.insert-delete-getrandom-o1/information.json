@@ -1,0 +1,11 @@
+{
+    "difficulty": "medium",
+    "similarQuestions": [
+        {
+            "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+            "titleSlug": "insert-delete-getrandom-o1-duplicates-allowed",
+            "difficulty": "Hard",
+            "translatedTitle": null
+        }
+    ]
+}
