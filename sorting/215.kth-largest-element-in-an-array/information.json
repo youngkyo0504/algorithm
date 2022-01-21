@@ -1,0 +1,47 @@
+{
+    "difficulty": "medium",
+    "similarQuestions": [
+        {
+            "title": "Wiggle Sort II",
+            "titleSlug": "wiggle-sort-ii",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        },
+        {
+            "title": "Top K Frequent Elements",
+            "titleSlug": "top-k-frequent-elements",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        },
+        {
+            "title": "Third Maximum Number",
+            "titleSlug": "third-maximum-number",
+            "difficulty": "Easy",
+            "translatedTitle": null
+        },
+        {
+            "title": "Kth Largest Element in a Stream",
+            "titleSlug": "kth-largest-element-in-a-stream",
+            "difficulty": "Easy",
+            "translatedTitle": null
+        },
+        {
+            "title": "K Closest Points to Origin",
+            "titleSlug": "k-closest-points-to-origin",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        },
+        {
+            "title": "Find the Kth Largest Integer in the Array",
+            "titleSlug": "find-the-kth-largest-integer-in-the-array",
+            "difficulty": "Medium",
+            "translatedTitle": null
+        },
+        {
+            "title": "Find Subsequence of Length K With the Largest Sum",
+            "titleSlug": "find-subsequence-of-length-k-with-the-largest-sum",
+            "difficulty": "Easy",
+            "translatedTitle": null
+        }
+    ]
+}
