@@ -12,8 +12,28 @@ def mergeIntervals(nums):
            result.append(next)
     return result     
 
+# 2023 1월 8일 2회차 
 
+intervals = [[1,5], [3,7], [10,15], [8,16]]
 
+def merge(intervals):
+        intervals = sorted(intervals)
+        result = [intervals[0]]
+
+        for i in range(1,len(intervals)) :
+                start,end = intervals[i]
+
+                last_index = len(result)-1
+
+                # merged된 start라는 뜻
+                m_start,m_end =result[last_index]
+
+                if start <= m_end :
+                        result[last_index] = [m_start, max(m_end,end)]
+                else: 
+                        result.append(intervals[i])
+        
+        return result 
 
 
 
